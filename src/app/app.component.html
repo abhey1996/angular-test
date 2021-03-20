@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="main-head">News Article</div>
+  <div class="stories">
+
+    <div class="story" *ngFor="let story of stories">
+      <a href="{{story.url}}" target="_blank">{{story.title}}</a>
+      <div class="icons">
+        <i class="fa fa-calendar margRight15"><span class="margLeft5">{{story.time}}</span></i>
+        <i class="fa fa-user"><span class="margLeft5">{{story.by}}</span></i>
+      </div>
+      <span class='text'>{{story.text ? story.text : 'NA'}}</span>
+
+    </div>
+
+  </div>
+</div>
